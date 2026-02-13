@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Star } from 'lucide-react';
+
 import { SCHOOL_INFO } from '../constants';
 
 const Footer: React.FC = () => {
@@ -9,7 +9,12 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
-            <Star className="text-gold w-6 h-6 fill-gold" />
+            <img 
+  src={logo} 
+  alt="Escudo del colegio" 
+  className="w-12 h-12 object-contain" 
+/>
+
             <span className="text-white font-serif text-xl font-bold">Wonderful Stars</span>
           </div>
           
