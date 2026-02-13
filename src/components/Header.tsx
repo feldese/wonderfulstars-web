@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Star } from 'lucide-react';
+iimport { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.png';
+
 import { SCHOOL_INFO } from '../constants';
 
 const Header: React.FC = () => {
@@ -28,7 +30,12 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Star className="text-gold w-8 h-8 fill-gold" />
+            <img
+  src={logo}
+  alt="Escudo Colegio Wonderful Stars"
+  className="w-10 h-10 object-contain"
+/>
+
             <span className="text-white font-serif text-xl md:text-2xl font-bold tracking-tight">
               Wonderful Stars
             </span>
