@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import logo from '../assets/logo.png';
 import { SCHOOL_INFO } from '../constants';
 
 const Footer: React.FC = () => {
