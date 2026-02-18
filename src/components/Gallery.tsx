@@ -26,24 +26,30 @@ const Gallery: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {images.map((img, i) => (
-          <div 
-            key={i} 
-            className={`relative overflow-hidden rounded-2xl group ${
-              i === 0 ? 'md:row-span-2' : ''
-            } ${i === 2 ? 'md:col-span-2' : ''}`}
-          >
-            <img 
-              src={img.url} 
-              alt={img.title} 
-              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span className="text-white font-bold text-lg">{img.title}</span>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+        {images.map((img, i) => {
+          // Determinar clases según el índice
+          let gridClasses = "relative overflow-hidden rounded-2xl group";
+          
+          if (i === 0) {
+            gridClasses += " row-span-2"; // Arte ocupa 2 filas
+          } else if (i === 2) {
+            gridClasses += " md:col-span-2"; // Deportes ocupa 2 columnas
+          }
+
+          return (
+            <div key={i} className={gridClasses}>
+              <img 
+                src={img.url} 
+                alt={img.title} 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="text-white font-bold text-lg text-center px-2">{img.title}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
