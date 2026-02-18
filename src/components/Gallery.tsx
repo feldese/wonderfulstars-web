@@ -1,14 +1,20 @@
 
 import React from 'react';
+import danzas from '../assets/danzas.jpg';
+import deportes from '../assets/deportes.jpeg';
+import laboratorio from '../assets/laboratorio.jpg';
+import robotica from '../assets/robotica.jpg';
+import visitas from '../assets/visitas.jpg';
+import arte from '../assets/arte.png';
 
 const Gallery: React.FC = () => {
   const images = [
-    { url: 'https://picsum.photos/id/367/600/600', title: 'Talleres de Arte' },
-    { url: 'https://picsum.photos/id/119/600/400', title: 'Infraestructura' },
-    { url: 'https://picsum.photos/id/160/600/800', title: 'Deportes' },
-    { url: 'https://picsum.photos/id/2/600/600', title: 'Computación' },
-    { url: 'https://picsum.photos/id/111/600/400', title: 'Biblioteca' },
-    { url: 'https://picsum.photos/id/105/600/600', title: 'Inicial' },
+    { url: '../assets/arte.png', title: 'Talleres de Arte' },
+    { url: '../assets/laboratorio.jpg', title: 'Laboratorios' },
+    { url: '../assets/deportes.jpeg', title: 'Deportes' },
+    { url: '../assets/robotica.jpg', title: 'Robótica' },
+    { url: '../assets/visitas.jpg', title: 'Visitas de estudio' },
+    { url: '../assets/danzas.jpg', title: 'Talleres de danzas' },
   ];
 
   return (
