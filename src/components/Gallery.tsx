@@ -9,12 +9,12 @@ import arte from '../assets/arte.png';
 
 const Gallery: React.FC = () => {
   const images = [
-    { url: 'https//wonderfulstars.edu.pe/src/assets/arte.png', title: 'Talleres de Arte' },
-    { url: 'https//wonderfulstars.edu.pe/src/assets/laboratorio.jpg', title: 'Laboratorios' },
-    { url: 'https//wonderfulstars.edu.pe/src/assets/deportes.jpeg', title: 'Deportes' },
-    { url: 'https//wonderfulstars.edu.pe/src/assets/robotica.jpg', title: 'Robótica' },
-    { url: 'https//wonderfulstars.edu.pe/src/assets/visitas.jpg', title: 'Visitas de estudio' },
-    { url: 'https//wonderfulstars.edu.pe/src/assets/danzas.jpg', title: 'Talleres de danzas' },
+    { url: 'https://wonderfulstars.edu.pe/src/assets/arte.png', title: 'Talleres de Arte' },
+    { url: 'https://wonderfulstars.edu.pe/src/assets/laboratorio.jpg', title: 'Laboratorios' },
+    { url: 'https://wonderfulstars.edu.pe/src/assets/deportes.jpeg', title: 'Deportes' },
+    { url: 'https://wonderfulstars.edu.pe/src/assets/robotica.jpg', title: 'Robótica' },
+    { url: 'https://wonderfulstars.edu.pe/src/assets/visitas.jpg', title: 'Visitas de estudio' },
+    { url: 'https://wonderfulstars.edu.pe/src/assets/danzas.jpg', title: 'Talleres de danzas' },
   ];
 
   return (
