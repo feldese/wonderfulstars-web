@@ -2,6 +2,7 @@
 import React from 'react';
 import { Cpu, Languages, Palette, GraduationCap, MessageCircle } from 'lucide-react';
 import { SCHOOL_INFO } from '../constants';
+import admision from '../assets/admision.jpg';
 
 const Admissions: React.FC = () => {
   const benefits = [
@@ -50,7 +51,7 @@ const Admissions: React.FC = () => {
 
         <div className="lg:w-1/2 relative min-h-[400px]">
           <img 
-            src="https://picsum.photos/id/180/800/1000" 
+            src={admision} 
             alt="Student Learning" 
             className="absolute inset-0 w-full h-full object-cover"
           />
