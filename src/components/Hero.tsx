@@ -2,6 +2,7 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
 import { SCHOOL_INFO } from '../constants';
+import portada from '../assets/portada.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Hero: React.FC = () => {
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://picsum.photos/id/20/1920/1080?grayscale" 
+          src={portada} 
           alt="School Environment" 
           className="w-full h-full object-cover"
         />
