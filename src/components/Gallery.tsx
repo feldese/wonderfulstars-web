@@ -1,4 +1,3 @@
-
 import React from 'react';
 import danzas from '../assets/danzas.jpg';
 import deportes from '../assets/deportes.jpeg';
@@ -9,12 +8,12 @@ import arte from '../assets/arte.png';
 
 const Gallery: React.FC = () => {
   const images = [
-    { url: 'https://wonderfulstars.edu.pe/src/assets/arte.png', title: 'Talleres de Arte' },
-    { url: 'https://wonderfulstars.edu.pe/src/assets/laboratorio.jpg', title: 'Laboratorios' },
-    { url: 'https://wonderfulstars.edu.pe/src/assets/deportes.jpeg', title: 'Deportes' },
-    { url: 'https://wonderfulstars.edu.pe/src/assets/robotica.jpg', title: 'Robótica' },
-    { url: 'https://wonderfulstars.edu.pe/src/assets/visitas.jpg', title: 'Visitas de estudio' },
-    { url: 'https://wonderfulstars.edu.pe/src/assets/danzas.jpg', title: 'Talleres de danzas' },
+    { url: arte, title: 'Talleres de Arte' },
+    { url: laboratorio, title: 'Laboratorios' },
+    { url: deportes, title: 'Deportes' },
+    { url: robotica, title: 'Robótica' },
+    { url: visitas, title: 'Visitas de estudio' },
+    { url: danzas, title: 'Talleres de danzas' },
   ];
 
   return (
@@ -38,7 +37,7 @@ const Gallery: React.FC = () => {
             <img 
               src={img.url} 
               alt={img.title} 
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
               <span className="text-white font-bold text-lg">{img.title}</span>
